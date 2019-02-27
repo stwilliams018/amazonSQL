@@ -1,6 +1,6 @@
 # **Node.js & mySQL Assignment**
 ## Homework Assignment 10 -bAmazon DB
-## GitHub Repository - 
+## GitHub Repository - https://github.com/stwilliams018/amazonSQL.git
 
 ### Overview
 
