@@ -1,0 +1,24 @@
+{
+  "name": "amazonsql",
+  "version": "1.0.0",
+  "description": "Nod and SQL app for customer purchases",
+  "main": "bamazonCustomr.js",
+  "scripts": {
+    "test": "node bamazonCustomr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stwilliams018/amazonSQL.git"
+  },
+  "author": "T  Williiams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stwilliams018/amazonSQL/issues"
+  },
+  "homepage": "https://github.com/stwilliams018/amazonSQL#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0",
+    "requirer": "0.0.4"
+  }
+}
