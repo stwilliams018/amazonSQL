@@ -9,12 +9,13 @@
 ![Display Items](Images/display.png)
 
 #### Provide user prompts via the inquirer package to determine users requested product and quantitiy:
-![Alt Text](question.JPG)
+![Questions](Images/question.png)
+
 #### Once the user has selected thier choice, JS runs another call to the SQL DB to determine if thier are sufficient quantities on-hand to fulfill the order.  If enough are on hand, the terminal will return the total cost of the purchase and how many are still on haand for purchase.  Finally the user will be put back in the intial display screen for more choices:
-![Display Items](good.JPG)
+![Good Sale](Images/good.png)
 
 #### If it is determined that there are not enough on had to fil the order, the terminal will return a message that there are not enough on hand and then promt the user to enter new command promts after items have been displayed:
-![Display Items](insufficient.JPG)
+![Insufficient](Images/insufficient.png)
 
 #### finally the SQL DB will be updated using the MyDQL package and update commands:
- ![Display Items](sql.JPG)
+ ![SQL Query and Create](Images/sql.png)
