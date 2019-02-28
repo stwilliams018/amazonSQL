@@ -59,8 +59,9 @@ function askQuestions(){
         else{
             Amt = res[0].price * validate.PurchaseQuantity;
             pID = validate.PurchaseID
-            Qty =  - validate.PurchaseQuantity;
-            
+            Qty = res[0].stock_quantity - validate.PurchaseQuantity;
+            var query = "update products set stock_quantity = "+ Qty+ " where id = " +pID
+            console.log ("$$$",query)
             console.log('')
             console.log ("-------------------------------------------------------------------------------------------");
             console.log ("                                Thank You for the Purchase                                 ");
@@ -68,13 +69,11 @@ function askQuestions(){
             console.log ("                        We currently have "+ Qty +" left for purchase                      ");
             console.log ("                      You will now be directed back to the inventory page                      ");                
             console.log ("-------------------------------------------------------------------------------------------");
-            connection.query("UPDATE products SET ? Where id ?",[{
-            stock_quantity : Qty
-            },{
-            id : pID
-            }],
+            connection.query(query,
             function(err,res){})
             pullData()
+           //console.log (err,res)
+            console.log(Qty)
         }})
         
     })
