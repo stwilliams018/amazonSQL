@@ -9,6 +9,7 @@
 ![Display Items](Images/display.png)
 
 #### Provide user prompts via the inquirer package to determine users requested product and quantitiy:
+#### Additionally the inquirer has validation to ensure accurate numbers are provided or the user cannot proceed.
 ![Questions](Images/question.png)
 
 #### Once the user has selected thier choice, JS runs another call to the SQL DB to determine if thier are sufficient quantities on-hand to fulfill the order.  If enough are on hand, the terminal will return the total cost of the purchase and how many are still on haand for purchase.  Finally the user will be put back in the intial display screen for more choices:
