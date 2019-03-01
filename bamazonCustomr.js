@@ -34,12 +34,29 @@ function pullData() {
 
 function askQuestions(){
     inquirer.prompt([{
+        type : 'input',
         name: 'PurchaseID',
-        message: 'Please select the product ID you wish to purchase'
-    },
-    {
+        message: 'Please select the product ID you wish to purchase',
+        validate : function(input){
+        if (isNaN(input)== false && parseInt(input) <= 10 && parseInt(input) > 0) {
+            return true;
+            }
+        else{
+            return false;
+            }
+        },
+    },{
+        type : 'input',
         name: 'PurchaseQuantity',
-        message: 'How many would you like to purchase?'
+        message: 'How many would you like to purchase?',
+        validate : function(input){
+            if (isNaN(input)== false) {
+                return true;
+                }
+            else{
+                return false;
+                }
+            },
     }
 
 ]).then(function(validate){
